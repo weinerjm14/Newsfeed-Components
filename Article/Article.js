@@ -117,15 +117,20 @@ function articleConstructor(obj) {
   let article = document.createElement("div");
   article.classList.add("article");
   let title = document.createElement("h2");
-  article.appendChild('title');
+  title.textContent = obj.title;
+  article.appendChild(title);
   let articleDate = document.createElement("p");
+  articleDate.textContent = obj.textContent;
   articleDate.classList.add("date");
   article.appendChild(articleDate);
   let firstPara = document.createElement("p");
+  firstPara.textContent = obj.firstParagraph;
   article.appendChild(firstPara);
   let secondPara = document.createElement("p");
+  secondPara.textContent = obj.secondParagraph;
   article.appendChild(secondPara);
   let thirdPara = document.createElement("p");
+  thirdPara.textContent = obj.thirdParagraph;
   article.appendChild(thirdPara);
   let expButton = document.createElement("span");
   expButton.classList.add("expandButton");
@@ -138,11 +143,4 @@ function articleConstructor(obj) {
 };
 
 let container = document.querySelector('.articles');
-let finishedArt = obj.map(articleConstructor(obj) {
-  document.title.textContent = 'obj.title',
-  articleDate.textContent = 'obj.date',
-  firstPara.textContent = 'obj.firstParagraph',
-  secondPara.textCont = 'obj.firstParagraph',
-  thirdPara.textContent = 'obj.thirdParagraph',
-  
-});
+let finishedArts = data.map((articleConstructor(data)) => {container.appendChild(article)});
