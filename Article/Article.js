@@ -2,6 +2,15 @@
 /* Look over this data, then proceed to line 91*/
 const data = [
   {
+    title: "Jennifer Weiner Is The Best",
+    date: "February 17, 2020",
+    firstParagraph: `Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. `,
+
+    secondParagraph: `HZombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. `,
+
+    thirdParagraph: `Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.`
+  },
+  {
     title: 'Lambda School Students: "We\'re the best!"',
     date: "Nov 5th, 2018",
     firstParagraph: `Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
@@ -113,24 +122,24 @@ const data = [
 
 */
 
-function articleConstructor(obj) {
+function articleConstructor(headlineText, date, firstParagraph, secondParagraph, thirdParagraph) {
   let article = document.createElement("div");
   article.classList.add("article");
-  let title = document.createElement("h2");
-  title.textContent = obj.title;
-  article.appendChild(title);
+  let headline = document.createElement("h2");
+  headline.textContent = headlineText;
+  article.appendChild(headline);
   let articleDate = document.createElement("p");
-  articleDate.textContent = obj.textContent;
+  articleDate.textContent = date;
   articleDate.classList.add("date");
   article.appendChild(articleDate);
   let firstPara = document.createElement("p");
-  firstPara.textContent = obj.firstParagraph;
+  firstPara.textContent = firstParagraph;
   article.appendChild(firstPara);
   let secondPara = document.createElement("p");
-  secondPara.textContent = obj.secondParagraph;
+  secondPara.textContent = secondParagraph;
   article.appendChild(secondPara);
   let thirdPara = document.createElement("p");
-  thirdPara.textContent = obj.thirdParagraph;
+  thirdPara.textContent = thirdParagraph;
   article.appendChild(thirdPara);
   let expButton = document.createElement("span");
   expButton.classList.add("expandButton");
@@ -138,9 +147,11 @@ function articleConstructor(obj) {
     article.classList.toggle("article-open");
   });
   article.appendChild(expButton);
+  return article
   
-  return article;
-};
-
-let container = document.querySelector('.articles');
-let finishedArts = data.map((articleConstructor(data)) => {container.appendChild(article)});
+  };
+  const container = document.querySelector(".articles");
+  data.forEach((item) => {
+    let newArticle = articleConstructor(item.title, item.date, item.firstParagraph, item.secondParagraph, item.thirdParagraph);
+    container.appendChild(newArticle);
+  })
