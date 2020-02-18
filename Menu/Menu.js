@@ -32,4 +32,27 @@ let menuItems = [
 
   Step 6: add the menu component to the DOM.
   
-*/
+// */
+// <div class="menu">
+// <ul>
+//   {each menu item as a list item}
+// </ul>
+// </div>
+let menuToggle = document.querySelector('.menu-button')
+function menuCreator(array){
+  let newDiv = document.createElement('div');
+  newDiv.classList.add('menu');
+  let newList = document.createElement('ul');
+  newDiv.appendChild(newList);
+  array.forEach((item) => {
+    let newItem = document.createElement("li");
+    newItem.textContent = item;
+    newList.appendChild(newItem);
+  })
+  menuToggle.addEventListener('click', e => {
+    newDiv.classList.toggle('menu--open');
+  })
+  return newDiv;
+}
+let lambdaMenue = menuCreator(menuItems);
+menuToggle.appendChild(lambdaMenue);
