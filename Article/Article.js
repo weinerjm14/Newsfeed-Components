@@ -164,6 +164,7 @@ function articleConstructor(headlineText, date, firstParagraph, secondParagraph,
   expButton.textContent = 'Open/Close'
   expButton.addEventListener("click", e => {
     article.classList.toggle("article-open");
+    article.style.transition = 'all 1s';
   });
   article.appendChild(expButton);
   return article

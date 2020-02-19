@@ -1,12 +1,12 @@
 /* This is the data we will be using, study it but don't change anything, yet. */
 
 let menuItems = [
-  'Students',
-  'Faculty',
+  "Students",
+  "Faculty",
   "What's New",
-  'Tech Trends',
-  'Music',
-  'Log Out'
+  "Tech Trends",
+  "Music",
+  "Log Out"
 ];
 
 /* 
@@ -38,21 +38,23 @@ let menuItems = [
 //   {each menu item as a list item}
 // </ul>
 // </div>
-let menuHolder = document.querySelector('.header')
-function menuCreator(array){
-  let newDiv = document.createElement('div');
-  newDiv.classList.add('menu');
-  let newList = document.createElement('ul');
+let menuHolder = document.querySelector(".header");
+function menuCreator(array) {
+  let newDiv = document.createElement("div");
+  newDiv.classList.add("menu");
+  let newList = document.createElement("ul");
   newDiv.appendChild(newList);
-  array.forEach((item) => {
+  array.forEach(item => {
     let newItem = document.createElement("li");
     newItem.textContent = item;
     newList.appendChild(newItem);
-  })
-  let MenuToggle = document.querySelector('.menu-button');
-  MenuToggle.addEventListener('click', e => {
-   newDiv.classList.toggle('menu--open');
-  })
+  });
+  let menuToggle = document.querySelector(".menu-button");
+  menuToggle.addEventListener("click", e => {
+    newDiv.classList.toggle("menu--open");
+    newDiv.style.transform = "all 2s";
+    
+  });
   return newDiv;
 }
 let lambdaMenue = menuCreator(menuItems);
