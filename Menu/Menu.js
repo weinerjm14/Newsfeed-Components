@@ -44,16 +44,18 @@ function menuCreator(array) {
   newDiv.classList.add("menu");
   let newList = document.createElement("ul");
   newDiv.appendChild(newList);
-  array.forEach(item => {
+    array.forEach(item => {
     let newItem = document.createElement("li");
     newItem.textContent = item;
     newList.appendChild(newItem);
   });
   let menuToggle = document.querySelector(".menu-button");
   menuToggle.addEventListener("click", e => {
+    gsap.to(newList, { duration: 3, ease: "bounce.in", x: -25})
     newDiv.classList.toggle("menu--open");
-    newDiv.style.transform = "all 2s";
-    
+    // newDiv.style.transform = "all 2s";
+
+   
   });
   return newDiv;
 }
