@@ -161,17 +161,22 @@ function articleConstructor(headlineText, date, firstParagraph, secondParagraph,
   article.appendChild(thirdPara);
   let expButton = document.createElement("span");
   expButton.classList.add("expandButton");
-  expButton.textContent = 'Open/Close'
+  expButton.textContent = 'Open/Close';
   expButton.addEventListener("click", e => {
-    article.classList.toggle("article-open");
-    article.style.transition = 'all 1s';
-  });
+     article.classList.toggle("article-open");
+      article.style.transition = 'all 1s'; 
+  });  
   article.appendChild(expButton);
-  return article
-  
+  return article;  
   };
   const container = document.querySelector(".articles");
   data.forEach((item) => {
     let newArticle = articleConstructor(item.title, item.date, item.firstParagraph, item.secondParagraph, item.thirdParagraph);
     container.appendChild(newArticle);
   })
+  // let expButton = document.querySelector('.expandButton');
+  // if (expButton.classList.contains("article-open")){
+  //   expButton.textContent = "Close";
+  // } else {
+  //   expButton.textContent = 'Open';
+  // };
