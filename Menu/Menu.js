@@ -38,7 +38,7 @@ let menuItems = [
 //   {each menu item as a list item}
 // </ul>
 // </div>
-let menuToggle = document.querySelector('.menu-button')
+let menuHolder = document.querySelector('.header')
 function menuCreator(array){
   let newDiv = document.createElement('div');
   newDiv.classList.add('menu');
@@ -49,10 +49,11 @@ function menuCreator(array){
     newItem.textContent = item;
     newList.appendChild(newItem);
   })
-  menuToggle.addEventListener('click', e => {
-    newDiv.classList.toggle('menu--open');
+  let MenuToggle = document.querySelector('.menu-button');
+  MenuToggle.addEventListener('click', e => {
+   newDiv.classList.toggle('menu--open');
   })
   return newDiv;
 }
 let lambdaMenue = menuCreator(menuItems);
-menuToggle.appendChild(lambdaMenue);
+menuHolder.appendChild(lambdaMenue);
