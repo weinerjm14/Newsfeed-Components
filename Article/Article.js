@@ -2,8 +2,35 @@
 /* Look over this data, then proceed to line 91*/
 const data = [
   {
+    title: "Jennifer Weiner Is The Best",
+    date: "February 17, 2020",
+    firstParagraph: `Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. `,
+
+    secondParagraph: `HZombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. `,
+
+    thirdParagraph: `Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.`
+  },
+  {
+    title: "Lambda School Wins Coveted Award",
+    date: "February 1, 2020",
+    firstParagraph: `Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. `,
+
+    secondParagraph: `HZombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. `,
+
+    thirdParagraph: `Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.`
+  },
+  {
+    title: "Top JavaScript Librarys for 2020",
+    date: "January 30, 2020",
+    firstParagraph: `Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. `,
+
+    secondParagraph: `HZombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium. `,
+
+    thirdParagraph: `Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​, morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.`
+  },
+  {
     title: 'Lambda School Students: "We\'re the best!"',
-    date: 'Nov 5th, 2018',
+    date: "Nov 5th, 2018",
     firstParagraph: `Lucas ipsum dolor sit amet ben twi'lek padmé darth darth darth moff hutt organa twi'lek. Ben amidala secura skywalker lando
         moff wicket tatooine luke.Solo wampa wampa calrissian yoda moff.Darth grievous darth gonk darth hutt.Darth baba skywalker
         watto fett jango maul han.Mon ewok sidious sidious lando kenobi grievous gamorrean solo.Yoda wedge utapau darth calamari.
@@ -23,8 +50,8 @@ const data = [
         moff calamari mon obi-wan. Solo grievous lando coruscant. Jinn darth palpatine obi-wan mon.`
   },
   {
-    title: 'Javascript and You, ES6',
-    date: 'May 7th, 2019',
+    title: "Javascript and You, ES6",
+    date: "May 7th, 2019",
     firstParagraph: `Alohamora wand elf parchment, Wingardium Leviosa hippogriff, house dementors betrayal. Holly, Snape centaur portkey ghost
         Hermione spell bezoar Scabbers. Peruvian-Night-Powder werewolf, Dobby pear-tickle half-moon-glasses, Knight-Bus. Padfoot
         snargaluff seeker: Hagrid broomstick mischief managed. Snitch Fluffy rock-cake, 9 ¾ dress robes I must not tell lies. Mudbloods
@@ -43,8 +70,8 @@ const data = [
         sing above the ground, Ginny Weasley bright red. Fanged frisbees, phoenix tears good clean match.`
   },
   {
-    title: 'React vs Angular vs Vue',
-    date: 'June 7th, 2019',
+    title: "React vs Angular vs Vue",
+    date: "June 7th, 2019",
     firstParagraph: `Bulbasaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ivysaur Lorem ipsum dolor sit amet, consectetur adipiscing
         elit. Venusaur Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charmander Lorem ipsum dolor sit amet, consectetur
         adipiscing elit. Charmeleon Lorem ipsum dolor sit amet, consectetur adipiscing elit. Charizard Lorem ipsum dolor sit amet,
@@ -71,8 +98,8 @@ const data = [
         Castform Lotad the power that's inside Burnt Berry Makuhita. Ghost Ariados Corphish Dusclops Golbat Gligar Zweilous.`
   },
   {
-    title: 'Professional Software Development in 2019',
-    date: 'Jan 1st, 2019',
+    title: "Professional Software Development in 2019",
+    date: "Jan 1st, 2019",
     firstParagraph: `Hodor hodor HODOR! Hodor hodor - hodor, hodor. Hodor hodor... Hodor hodor hodor; hodor hodor. Hodor hodor hodor, hodor, hodor
           hodor. Hodor, hodor. Hodor. Hodor, hodor - hodor... Hodor hodor hodor; hodor HODOR hodor, hodor hodor?! Hodor hodor, hodor.
           Hodor hodor hodor hodor hodor! Hodor hodor - HODOR hodor, hodor hodor hodor hodor hodor; hodor hodor? `,
@@ -112,3 +139,44 @@ const data = [
   Step 5: Add a new article to the array. Make sure it is in the same format as the others. Refresh the page to see the new article.
 
 */
+
+function articleConstructor(headlineText, date, firstParagraph, secondParagraph, thirdParagraph) {
+  let article = document.createElement("div");
+  article.classList.add("article");
+  let headline = document.createElement("h2");
+  headline.textContent = headlineText;
+  article.appendChild(headline);
+  let articleDate = document.createElement("p");
+  articleDate.textContent = date;
+  articleDate.classList.add("date");
+  article.appendChild(articleDate);
+  let firstPara = document.createElement("p");
+  firstPara.textContent = firstParagraph;
+  article.appendChild(firstPara);
+  let secondPara = document.createElement("p");
+  secondPara.textContent = secondParagraph;
+  article.appendChild(secondPara);
+  let thirdPara = document.createElement("p");
+  thirdPara.textContent = thirdParagraph;
+  article.appendChild(thirdPara);
+  let expButton = document.createElement("span");
+  expButton.classList.add("expandButton");
+  expButton.textContent = 'Open/Close';
+  expButton.addEventListener("click", e => {
+     article.classList.toggle("article-open");
+      article.style.transition = 'all 1s'; 
+  });  
+  article.appendChild(expButton);
+  return article;  
+  };
+  const container = document.querySelector(".articles");
+  data.forEach((item) => {
+    let newArticle = articleConstructor(item.title, item.date, item.firstParagraph, item.secondParagraph, item.thirdParagraph);
+    container.appendChild(newArticle);
+  })
+  // let expButton = document.querySelector('.expandButton');
+  // if (expButton.classList.contains("article-open")){
+  //   expButton.textContent = "Close";
+  // } else {
+  //   expButton.textContent = 'Open';
+  // };

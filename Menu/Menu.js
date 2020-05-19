@@ -1,12 +1,12 @@
 /* This is the data we will be using, study it but don't change anything, yet. */
 
 let menuItems = [
-  'Students',
-  'Faculty',
+  "Students",
+  "Faculty",
   "What's New",
-  'Tech Trends',
-  'Music',
-  'Log Out'
+  "Tech Trends",
+  "Music",
+  "Log Out"
 ];
 
 /* 
@@ -32,4 +32,32 @@ let menuItems = [
 
   Step 6: add the menu component to the DOM.
   
-*/
+// */
+// <div class="menu">
+// <ul>
+//   {each menu item as a list item}
+// </ul>
+// </div>
+let menuHolder = document.querySelector(".header");
+function menuCreator(array) {
+  let newDiv = document.createElement("div");
+  newDiv.classList.add("menu");
+  let newList = document.createElement("ul");
+  newDiv.appendChild(newList);
+    array.forEach(item => {
+    let newItem = document.createElement("li");
+    newItem.textContent = item;
+    newList.appendChild(newItem);
+  });
+  let menuToggle = document.querySelector(".menu-button");
+  menuToggle.addEventListener("click", e => {
+    gsap.to(newList, { duration: 3, ease: "bounce.in", x: -25})
+    newDiv.classList.toggle("menu--open");
+    // newDiv.style.transform = "all 2s";
+
+   
+  });
+  return newDiv;
+}
+let lambdaMenue = menuCreator(menuItems);
+menuHolder.appendChild(lambdaMenue);
